@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="escenaPrincipal" prefHeight="600.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SimulatorGameController">
+    <stylesheets>
+        <URL value="@/Other/simulatorgame.css" />
+    </stylesheets>
+   <children>
+      <Pane fx:id="escenaCubo" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@../Other/simulatorgame.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="34.0" layoutY="73.0" prefHeight="155.0" prefWidth="167.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ToggleButton layoutX="16.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeFaceLeft" styleClass="toggleButton" stylesheets="@../Other/simulatorgame.css">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Other/RedFace.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <DropShadow />
+                     </effect></ToggleButton>
+                  <ToggleButton layoutX="104.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeFaceRight" styleClass="toggleButton" stylesheets="@../Other/simulatorgame.css">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Other/OrangeFace.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <DropShadow />
+                     </effect></ToggleButton>
+                  <ToggleButton layoutX="16.0" layoutY="59.0" mnemonicParsing="false" onAction="#changeFaceUp" styleClass="toggleButton" stylesheets="@../Other/simulatorgame.css">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Other/BlueFace.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <DropShadow />
+                     </effect></ToggleButton>
+                  <ToggleButton layoutX="104.0" layoutY="59.0" mnemonicParsing="false" onAction="#changeFaceDown" styleClass="toggleButton" stylesheets="@../Other/simulatorgame.css">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Other/GreenFace.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <DropShadow />
+                     </effect></ToggleButton>
+                  <ToggleButton layoutX="17.0" layoutY="107.0" mnemonicParsing="false" onAction="#changeFaceBack" styleClass="toggleButton" stylesheets="@../Other/simulatorgame.css">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Other/WhiteFace.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <DropShadow />
+                     </effect></ToggleButton>
+                  <ToggleButton layoutX="105.0" layoutY="107.0" mnemonicParsing="false" onAction="#changeFaceFront" styleClass="toggleButton" stylesheets="@../Other/simulatorgame.css">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Other/YellowFace.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <DropShadow />
+                     </effect></ToggleButton>
+               </children></Pane>
+            <Label layoutX="78.0" layoutY="36.0" text="Caras" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="25.0" />
+               </font></Label>
+            <Pane layoutX="38.0" layoutY="323.0" prefHeight="190.0" prefWidth="167.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ToggleButton fx:id="btn_Left" layoutX="19.0" layoutY="15.0" mnemonicParsing="false" styleClass="toggleButton" stylesheets="@../Other/simulatorgame.css">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Other/Left.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <DropShadow />
+                     </effect></ToggleButton>
+                  <ToggleButton fx:id="btn_Right" layoutX="102.0" layoutY="14.0" mnemonicParsing="false" styleClass="toggleButton" stylesheets="@../Other/simulatorgame.css">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Other/Right.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <DropShadow />
+                     </effect></ToggleButton>
+                  <ToggleButton fx:id="btn_Up" layoutX="19.0" layoutY="73.0" mnemonicParsing="false" styleClass="toggleButton" stylesheets="@../Other/simulatorgame.css">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Other/Up.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <DropShadow />
+                     </effect></ToggleButton>
+                  <ToggleButton fx:id="btn_Down" layoutX="102.0" layoutY="72.0" mnemonicParsing="false" styleClass="toggleButton" stylesheets="@../Other/simulatorgame.css">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Other/Down.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <DropShadow />
+                     </effect></ToggleButton>
+                  <ToggleButton fx:id="btn_Front" layoutX="19.0" layoutY="129.0" mnemonicParsing="false" styleClass="toggleButton" stylesheets="@../Other/simulatorgame.css">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Other/Front.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></ToggleButton>
+                  <ToggleButton fx:id="btn_Back" layoutX="102.0" layoutY="128.0" mnemonicParsing="false" styleClass="toggleButton" stylesheets="@../Other/simulatorgame.css">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Other/Back.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></ToggleButton>
+               </children>
+            </Pane>
+            <Label layoutX="46.0" layoutY="283.0" text="Movimientos" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="25.0" />
+               </font></Label>
+            <Pane layoutX="441.0" layoutY="224.0" prefHeight="153.0" prefWidth="153.0" style="-fx-background-color: black;">
+               <children>
+                  <GridPane fx:id="gridPaneCubo" hgap="5.0" prefHeight="150.0" prefWidth="150.0" vgap="5.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </GridPane>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Label layoutX="793.0" layoutY="513.0" text="Tiempo:" textFill="#f5f5f5">
+               <font>
+                  <Font name="Consolas Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="tiempo" layoutX="902.0" layoutY="516.0" text="00:00" textFill="#eeff04">
+               <font>
+                  <Font name="Consolas Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="451.0" layoutY="20.0" text="Puntaje:" textFill="#f5f5f5">
+               <font>
+                  <Font name="Consolas Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="puntos" layoutX="572.0" layoutY="23.0" text="0" textFill="#eeff04">
+               <font>
+                  <Font name="Consolas Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="659.0" layoutY="20.0" text="Usuario:" textFill="#f5f5f5">
+               <font>
+                  <Font name="Consolas Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="Lb_nombreUsuario" layoutX="783.0" layoutY="22.0" textFill="#eeff04">
+               <font>
+                  <Font name="Consolas Bold" size="22.0" />
+               </font>
+            </Label>
+            <ToggleButton layoutX="343.0" layoutY="519.0" mnemonicParsing="false" onAction="#scramble" styleClass="toggleButton" stylesheets="@../Other/simulatorgame.css">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Other/Desordenar_cuborubik.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ToggleButton>
+            <ToggleButton layoutX="490.0" layoutY="519.0" mnemonicParsing="false" onAction="#solve" styleClass="toggleButton" stylesheets="@../Other/simulatorgame.css">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Other/Resolver_cuborubik.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ToggleButton>
+            <Label layoutX="321.0" layoutY="479.0" text="Desarmar" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="470.0" layoutY="479.0" text="Resolver" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="25.0" />
+               </font>
+            </Label>
+            <ToggleButton layoutX="22.0" layoutY="541.0" mnemonicParsing="false" onAction="#returnMenu" prefHeight="36.0" prefWidth="96.0" styleClass="toggleButton" stylesheets="@../Other/simulatorgame.css" text="VOLVER">
+               <font>
+                  <Font name="Consolas Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></ToggleButton>
+            <ToggleButton layoutX="635.0" layoutY="519.0" mnemonicParsing="false" onAction="#saveGame" styleClass="toggleButton" stylesheets="@../Other/simulatorgame.css">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Other/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <Label layoutX="617.0" layoutY="479.0" text="Guardar" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="25.0" />
+               </font>
+            </Label>
+            <ToggleButton layoutX="130.0" layoutY="541.0" mnemonicParsing="false" onAction="#reset" prefHeight="36.0" prefWidth="96.0" styleClass="toggleButton" stylesheets="@../Other/simulatorgame.css" text="REINICAR">
+               <font>
+                  <Font name="Consolas Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ToggleButton>
+         </children></Pane>
+   </children>
+</AnchorPane>

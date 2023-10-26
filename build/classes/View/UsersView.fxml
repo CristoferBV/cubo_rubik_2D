@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="escenaPrincipal" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UsersViewController">
+   <children>
+      <Pane fx:id="escenaVistaUsuarios" layoutX="100.0" layoutY="100.0" prefHeight="600.0" prefWidth="400.0" styleClass="mainFxmlClass" stylesheets="@../Other/usersview.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="50.0" layoutY="32.0" prefHeight="76.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(#F8BF05, #e74c3c); -fx-background-radius: 10;" styleClass="paneAnimated" stylesheets="@../Other/menu.css">
+               <children>
+                  <Label layoutY="-1.0" prefHeight="76.0" prefWidth="300.0" styleClass="labelTitle" stylesheets="@../Other/menu.css" text="Rubik Cube's Game">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Pane layoutX="31.0" layoutY="157.0" prefHeight="396.0" prefWidth="331.0" style="-fx-background-color: linear-gradient(#F8BF05, #e74c3c); -fx-background-radius: 10;">
+               <children>
+                  <ToggleButton layoutX="25.0" layoutY="321.0" mnemonicParsing="false" onAction="#playSaveGame" styleClass="toggleButton" stylesheets="@../Other/usersview.css" text="SELECCIONAR">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ToggleButton>
+                  <ListView fx:id="listaUsuarios" layoutX="25.0" layoutY="78.0" prefHeight="216.0" prefWidth="283.0" stylesheets="@../Other/usersview.css">
+                     <styleClass>
+                        <String fx:value="listUser" />
+                        <String fx:value="list-cell" />
+                     </styleClass>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ListView>
+                  <Label layoutX="65.0" layoutY="27.0" text="Lista usuarios" textFill="WHITE">
+                     <font>
+                        <Font name="Consolas Bold" size="25.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <ToggleButton layoutX="207.0" layoutY="321.0" mnemonicParsing="false" onAction="#returnMenu" prefWidth="119.0" styleClass="toggleButtonAtras" stylesheets="@../Other/usersview.css" text="VOLVER">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ToggleButton>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+         </children></Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+
+
+.mainFxmlClass {
+    -fx-background-image: url("Fondo_menu1.jpg");
+    -fx-background-size: cover; /* Ajusta el tamaño de la imagen para que cubra el elemento */
+    -fx-background-repeat: no-repeat; /* Evita que la imagen se repita */
+    -fx-background-position: center center; 
+    -fx-min-width: 0; 
+    -fx-min-height: 0; 
+}
+
+.toggleButton {
+    -fx-background-color: #FF8700; 
+    -fx-text-fill: white; 
+    -fx-font-size: 16px; 
+    -fx-font-weight: bold; 
+    -fx-pref-width: 120px; 
+    -fx-pref-height: 40px; 
+    -fx-cursor: hand; 
+    -fx-transition: scale 0.2s; 
+}
+
+.toggleButton:hover {
+    -fx-background-color: #e74c3c; 
+    -fx-scale-x: 1.1; 
+    -fx-scale-y: 1.1; 
+}
+
+.labelTitle {
+    -fx-font-family: "Forte";
+    -fx-font-size: 32px;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold; 
+    -fx-alignment: center;
+    -fx-padding: 20px;
+}

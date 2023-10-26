@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="escenaPrincipal" prefHeight="600.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StartGameController">
+    <stylesheets>
+        <URL value="@/Other/menu.css" />
+    </stylesheets>
+   <children>
+      <ToggleButton layoutX="132.0" layoutY="483.0" mnemonicParsing="false" onAction="#playGame" styleClass="toggleButton" stylesheets="@../Other/menu.css" text="ENTRAR">
+         <effect>
+            <DropShadow />
+         </effect></ToggleButton>
+      <Pane fx:id="paneTittle" layoutX="48.0" layoutY="38.0" prefHeight="76.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(#F8BF05, #e74c3c); -fx-background-radius: 10;" styleClass="paneAnimated" stylesheets="@../Other/menu.css">
+         <children>
+            <Label prefHeight="76.0" prefWidth="300.0" styleClass="labelTitle" stylesheets="@../Other/menu.css" text="Rubik Cube's Game">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect></Pane>
+      <Pane layoutX="110.0" layoutY="201.0" prefHeight="180.0" prefWidth="180.0" style="-fx-background-color: white; -fx-background-radius: 100;">
+         <children>
+            <ImageView fitHeight="192.0" fitWidth="344.0" pickOnBounds="true" preserveRatio="true" translateX="-37.0" translateY="-10.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <image>
+                  <Image url="@../Other/cuberubik.gif" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect></Pane>
+   </children>
+</AnchorPane>
