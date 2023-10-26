@@ -1,0 +1,12 @@
+Usuario: JUAN
+Tiempo: 02:05
+Puntaje: 12
+Movimientos del Cubo:
+R L L L R R R L U U U U 
+
+Usuario: ANDREY
+Tiempo: 00:16
+Puntaje: 0
+Movimientos del Cubo:
+
+

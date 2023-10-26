@@ -1,0 +1,40 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.escenaRanking{
+    -fx-background-image: url("Fondo_menu1.jpg");
+    -fx-background-size: cover; /* Ajusta el tamaño de la imagen para que cubra el elemento */
+    -fx-background-repeat: no-repeat; /* Evita que la imagen se repita */
+    -fx-background-position: center center; 
+    -fx-min-width: 0; 
+    -fx-min-height: 0; 
+}
+
+/* Aplica un estilo a la ListView con la clase .listUser */
+.listUser {
+    -fx-background-color:  linear-gradient(#F8BF05, #D3E81E); /* Fondo con degradado */
+    -fx-background-radius: 10; /* Radio para redondear los bordes */
+    -fx-border-radius: 10; /* Radio para redondear los bordes del borde */
+    -fx-padding: 10; /* Espacio dentro del borde para que el contenido no quede pegado al borde */
+}
+
+/* Estilo para las celdas de la ListView */
+.listUser .list-cell {
+    -fx-font-weight: bold; 
+    -fx-background-color: transparent; /* Fondo transparente para las celdas */
+    -fx-background-insets: 0; /* Elimina los márgenes internos de las celdas */
+}
+
+/* Estilo cuando el mouse está sobre una celda */
+.listUser .list-cell:hover {
+    -fx-background-color: white; /* Color de fondo al pasar el mouse */
+    -fx-background-radius: 10px;
+}
+
+/* Estilo cuando una celda está seleccionada */
+.listUser .list-cell:selected {
+    -fx-background-color: white; /* Color de fondo cuando está seleccionado */
+    -fx-text-fill: black; /* Color de texto cuando está seleccionado */
+    -fx-background-radius: 10;
+}

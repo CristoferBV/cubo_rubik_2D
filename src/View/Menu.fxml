@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="escenaPrincipal" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MenuController">
+   <children>
+      <Pane fx:id="escenaMenu" prefHeight="600.0" prefWidth="400.0" styleClass="sceneMain" stylesheets="@../Other/menuGame.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="48.0" layoutY="31.0" prefHeight="76.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(#F8BF05, #e74c3c); -fx-background-radius: 10;" styleClass="paneAnimated" stylesheets="@../Other/menu.css">
+               <children>
+                  <Label layoutY="-1.0" prefHeight="76.0" prefWidth="300.0" styleClass="labelTitle" stylesheets="@../Other/menu.css" text="Rubik Cube's Game">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Pane layoutX="72.0" layoutY="170.0" prefHeight="373.0" prefWidth="252.0" style="-fx-background-color: linear-gradient(#F8BF05, #e74c3c); -fx-background-radius: 10;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ToggleButton layoutX="51.0" layoutY="153.0" mnemonicParsing="false" onAction="#viewUsers" styleClass="toggleButtonInicio" stylesheets="@../Other/menuGame.css" text="PARTIDAS">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ToggleButton>
+                  <ToggleButton layoutX="51.0" layoutY="284.0" mnemonicParsing="false" onAction="#instructionsGame" styleClass="toggleButtonInicio" stylesheets="@../Other/menuGame.css" text="INSTRUCCIONES">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ToggleButton>
+                  <ToggleButton layoutX="51.0" layoutY="83.0" mnemonicParsing="false" onAction="#addUser" styleClass="toggleButtonInicio" stylesheets="@../Other/menuGame.css" text="CREAR USUARIO">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ToggleButton>
+                  <Label layoutX="91.0" layoutY="20.0" text="Menu" textFill="WHITE">
+                     <font>
+                        <Font name="Consolas Bold" size="25.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <ToggleButton layoutX="51.0" layoutY="218.0" mnemonicParsing="false" onAction="#usersRanking" styleClass="toggleButtonInicio" stylesheets="@../Other/menuGame.css" text="RANKING">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ToggleButton>
+               </children>
+            </Pane>
+         </children></Pane>
+      <Pane fx:id="escenaInicio" layoutX="94.0" layoutY="112.0" prefHeight="600.0" prefWidth="400.0" styleClass="sceneMain" stylesheets="@../Other/menuGame.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="48.0" layoutY="31.0" prefHeight="76.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(#F8BF05, #e74c3c); -fx-background-radius: 10;" styleClass="paneAnimated" stylesheets="@../Other/menu.css">
+               <children>
+                  <Label prefHeight="76.0" prefWidth="300.0" styleClass="labelTitle" stylesheets="@../Other/menu.css" text="Rubik Cube's Game">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Pane layoutX="50.0" layoutY="227.0" prefHeight="306.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(#F8BF05, #e74c3c); -fx-background-radius: 10;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <TextField fx:id="txt_nombreUsuario" alignment="CENTER" focusTraversable="false" layoutX="44.0" layoutY="115.0" promptText="Nombre de usuario" styleClass="textField" stylesheets="@../Other/menuGame.css">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <Label layoutX="23.0" layoutY="40.0" prefHeight="30.0" prefWidth="252.0" text="Escriba un nombre:" textFill="WHITE">
+                     <font>
+                        <Font name="Consolas Bold" size="25.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <ToggleButton layoutX="43.0" layoutY="235.0" mnemonicParsing="false" onAction="#savedUser" styleClass="toggleButtonGuardar" stylesheets="@../Other/menuGame.css" text="GUADAR">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ToggleButton>
+                  <ToggleButton layoutX="162.0" layoutY="235.0" mnemonicParsing="false" onAction="#returnMenu" styleClass="toggleButtonGuardar" stylesheets="@../Other/menuGame.css" text="VOLVER">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ToggleButton>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

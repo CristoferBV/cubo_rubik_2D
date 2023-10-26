@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="escenaPrincipal" prefHeight="600.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RankingController">
+    <stylesheets>
+        <URL value="@/Other/ranking.css" />
+    </stylesheets>
+   <children>
+      <Pane fx:id="escenaRanking" layoutX="112.0" layoutY="111.0" prefHeight="600.0" prefWidth="400.0" styleClass="escenaRanking" stylesheets="@../Other/ranking.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="35.0" layoutY="138.0" prefHeight="437.0" prefWidth="331.0" style="-fx-background-color: linear-gradient(#F8BF05, #e74c3c); -fx-background-radius: 10;">
+               <children>
+                  <ListView fx:id="listaRanking" layoutX="25.0" layoutY="78.0" prefHeight="270.0" prefWidth="283.0" stylesheets="@../Other/usersview.css">
+                     <styleClass>
+                        <String fx:value="listUser" />
+                        <String fx:value="list-cell" />
+                     </styleClass>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ListView>
+                  <Label layoutX="62.0" layoutY="27.0" text="Rankin Usuarios" textFill="WHITE">
+                     <font>
+                        <Font name="Consolas Bold" size="25.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <ToggleButton layoutX="117.0" layoutY="373.0" mnemonicParsing="false" onAction="#returnMenu" prefWidth="119.0" styleClass="toggleButtonAtras" stylesheets="@../Other/usersview.css" text="VOLVER">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ToggleButton>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Pane layoutX="47.0" layoutY="31.0" prefHeight="76.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(#F8BF05, #e74c3c); -fx-background-radius: 10;" styleClass="paneAnimated" stylesheets="@../Other/menu.css">
+               <children>
+                  <Label layoutY="-1.0" prefHeight="76.0" prefWidth="300.0" styleClass="labelTitle" stylesheets="@../Other/menu.css" text="Rubik Cube's Game">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
